@@ -2,6 +2,10 @@
     --red:#b90e31; --gold:#fabd0f; --blue:#002452;
 }
 
+html {
+    overscroll-behavior: none;
+}
+
 body {
     font-family: system-ui, sans-serif;
     margin: 0;
@@ -35,4 +39,17 @@ h2 {
 
 img {
     border-radius: 12px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.contact-content p {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    background-color: var(--gold);
 }
