@@ -16,7 +16,7 @@ body {
 header {
     background: var(--blue);
     color: #fff;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 main {
@@ -37,19 +37,44 @@ h2 {
     font-size: 1.6rem;
 }
 
-img {
+p {
+    font-size: 1rem;
+}
+
+.profile {
     border-radius: 12px;
 }
 
-.contact-content {
+.contact {
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
 
-.contact-content p {
+.contact-content {
     margin: 0;
-    padding: 0.5rem 1rem;
+    padding: 0 1rem;
     border-radius: 12px;
     background-color: var(--gold);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-content img {
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+    margin: 0.5rem;
+}
+
+.contact-content p {
+    display: none;
+    /* transition: all 0.3s ease-in-out; */
+    transition: 0.3s;
+}
+
+.contact-content:hover p {
+    display: flex;
+    transition: 0.3s;
 }
